@@ -1,0 +1,146 @@
+html
+    font-size: 10px
+    main
+        padding: 0 0 !important
+        #sct-titulo
+            p
+                font-size: 2rem
+        .btn-promocion
+                background: $rojo-complementario
+                border: 1px solid $rojo-complementario
+                border-radius: 25px                
+                position: fixed
+                top: 43rem
+                right: 11rem
+                padding: 1px 5px
+                a
+                    color: $azul-principal
+                    font-family: $tipografia-texto
+                    font-size: 2rem
+                    font-weight: 700
+                    padding: 1rem
+                    text-decoration: none
+        #sct-formulario
+            width: 100%
+            display: flex
+            justify-content: center
+            padding-top: 3rem
+            .dFilaForm
+                background: $azul-principal
+                border: 1px solid $azul-principal
+                border-radius: 25px
+                width: 60%            
+                .dForm
+                    display: flex
+                    flex-direction: column
+                    padding: 3rem
+                    label
+                        color: $gris-claro
+                        font-family: $tipografia-texto
+                        font-size: 1.6rem
+                    input
+                        margin-bottom: 2rem
+                        padding: 0.5rem 0
+                    input:nth-child(8)
+                        padding: 5rem 0
+                    input::placeholder
+                        color: $azul-principal
+                        font-size: 1.6rem
+                        font-family: $tipografia-texto
+                    button
+                        background: $rojo-complementario
+                        border: 1px solid $rojo-complementario
+                        color: $azul-principal
+                        font-family: $tipografia-texto
+                        font-size: 1.6rem
+                        width: 35%
+                        &:hover
+                            background: $gris-claro                            
+                            color: $rojo-complementario
+            @media all and (max-width: 767px)
+                .dFilaForm
+                    width: 80%    
+        #sct-iconos
+            margin-top: 5rem
+            p
+                color: $azul-principal
+                font-size: 1.6rem
+                font-family: $tipografia-texto
+                text-align: center
+            .dIconos
+                color: $azul-principal
+                font-size: 2rem
+                font-family: $tipografia-texto
+                text-align: center
+                display: flex
+                justify-content: center
+                a
+                    padding: 0 1rem
+                .aI:hover
+                    color: $rojo-complementario
+                .aIWh:hover
+                    color: $verde-wh
+                div
+                    text-align: left
+        #sct-promocion
+            margin-top: 3rem
+            .dPromocion
+                display: flex
+                justify-content: center
+            .dFotoJorge
+                display: flex
+                justify-content: center
+                img
+                    border: 5px solid $rojo-complementario
+                    border-radius: 50%
+            .dTextoPromocion
+                p
+                    color: $azul-principal
+                    font-size: 2rem
+                    font-family: $tipografia-texto
+                    padding: 0 1rem
+                p:nth-child(1)
+                    margin-top: 8rem
+                @media all and ( max-width: 767px )
+                    p:nth-child(1)
+                        margin-top: 1rem                    
+            .dIconoRegalo
+                i
+                    color: $rojo-complementario
+                    font-size: 20rem
+                @media all and (max-width: 767px)
+                    display: flex
+                    justify-content: center
+        #fotos1
+            margin: 2rem 0 3rem
+            div
+                display: flex
+                justify-content: space-around
+                div
+                    .dFotos
+                        margin-bottom: 5rem
+                        .dFotosTexto
+                            width: 100%
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            text-align: center
+                            p
+                                color: $gris-oscuro
+                                font-family: $tipografia-texto
+                                font-size: 1.6rem
+                            p:nth-child(1)
+                                font-size: 1.8rem
+                        .dFotoIndividual                            
+                            background-position: center
+                            background-size: cover
+                            border: 5px solid $rojo-complementario
+                            border-radius: 50%
+                            height: 175px
+                            width: 175px
+                        .dFotoMujer
+                            background-image: url(../img/mujerAvatar-min.png)
+                        .dFotoGerente
+                            background-image: url(../img/gerenteAvatar-min.png)
+                        .dFotoCliente
+                            background-image: url(../img/clienteAvatar-min.png)

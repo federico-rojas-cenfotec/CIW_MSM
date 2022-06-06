@@ -1,0 +1,69 @@
+html
+    font-size: 10px
+    main
+        margin: 0 0 !important
+        padding: 0 0 !important
+        h2
+            color: $azul-principal
+            font-family: $tipografia-titulos
+            font-size: 2rem
+            font-weight: 700
+            text-align: center
+            padding: 0 1rem
+        #fotos1, #fotos2
+            margin: 1rem 0 3rem
+            .btn-promocion
+                background: $rojo-complementario
+                border: 1px solid $rojo-complementario
+                border-radius: 50%
+                padding: 10px 10px
+                margin-left: 110rem
+                a
+                    color: $azul-principal
+                    font-family: $tipografia-texto
+                    font-size: 3rem
+                    font-weight: 700
+                    text-decoration: none
+            div
+                display: flex
+                justify-content: center
+                div
+                    .dFotos
+                        border: 5px solid $azul-principal
+                        border-radius: 25px 25px 0 0
+                        .dFotosTexto
+                            background: $azul-principal
+                            width: 100%
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            text-align: center
+                            p
+                                color: $gris-claro
+                                font-family: $tipografia-texto
+                                font-size: 1.6rem
+                            p:nth-child(1)
+                                font-size: 1.8rem
+        #fotos2
+            .dFotos2Columna
+                display: flex
+                justify-content: space-around                
+            @media all and ( max-width: 767px )
+                .dFotos2Columna
+                    align-items: center
+                    display: flex
+                    flex-direction: column
+                    .dFotos:nth-child(1)
+                        margin-bottom: 3rem
+        #sct-EqReparan
+            margin-top: 3rem
+            h2
+                font-family: $tipografia-titulos
+                font-size: 2rem
+                padding: 0 10% 3rem 10%
+            .dCarouselEqReparan
+                border: 5px solid $rojo-complementario
+                border-radius: 15px
+                padding: 3rem 0
+        
+                    

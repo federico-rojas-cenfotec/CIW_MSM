@@ -1,0 +1,230 @@
+html
+    font-size: 10px
+body
+    header
+        nav
+            background: $azul-secundario
+            div
+                display: flex
+                justify-content: center
+                .navbar-toggler
+                    background-color: $gris-claro
+            .aLogo
+                color: $gris-claro !important
+                font-family: $tipografia-texto
+                font-size: 1.6rem
+                padding-left: 2rem
+            .dMenu
+                a
+                    color: $gris-claro !important
+                    font-family: $tipografia-texto
+                    font-size: 1.6rem
+                    margin-right: 2rem
+                .aMenuPrinc:hover
+                    background: $rojo-complementario
+            @media all and (max-width: 767px)
+                div
+                    justify-content: left
+
+    .btn-wsp
+        background: $verde-wh
+        border-radius: 50%
+        bottom: 30px
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3)
+        font-size: 30px
+        height: 50px
+        position: fixed        
+        left: 1rem
+        /*este es el que ubica el ícono en la esquina inferior izq.*/
+        line-height: 50px
+        text-align: center
+        width: 50px        
+        z-index: 100
+    .btn-wsp1
+        color: #fff
+    .dTelFlotante
+        align-items: center        
+        border: 1px solid $rojo-complementario
+        border-radius: 50%
+        bottom: 90px
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3)
+        display: flex
+        height: 50px
+        justify-content: center
+        line-height: 50px
+        position: fixed
+        left: 1rem
+        width: 50px        
+        z-index: 100
+        a
+            color: $rojo-complementario
+            font-size: 20px
+            text-decoration: none
+    main
+        padding: 0 0 !important
+        #sct-titulo
+            .sct-tituloIzq
+                h1
+                    color: $azul-principal
+                    font-family: $tipografia-titulos
+                    font-size: 6rem
+                    font-weight: 700
+                    padding: 3rem 5% 3rem 5%
+                    text-align: center
+                @media all and ( max-width: 767px)
+                    h1
+                        font-size: 3rem
+                p
+                    color: $azul-principal
+                    font-family: $tipografia-texto
+                    font-size: 1.6rem
+                    padding: 0 25% 1rem 25%
+                    text-align: center
+                @media all and (max-width: 767px)
+                    p
+                        padding: 0 5%
+            @media all and (max-width: 767px)
+                .sct-tituloIzq
+                    order: 2
+            .dImgLogoDerecha
+                align-items: center
+                display: flex
+                justify-content: center
+                order: 1
+                padding-top: 3rem                          
+                img
+                    border: 5px solid $azul-principal
+                    border-radius: 25px
+                    height: 200px
+                    width: 200px
+            @media all and (max-width: 767px)
+                .dImgLogoDerecha
+                    order: 1
+        #sct-Valores
+            background: $azul-principal
+            border: 20px solid $azul-principal
+            border-radius: 50px
+            margin-top: 3rem
+            padding-bottom: 5rem        
+            .dPorque
+                align-items: center
+                background: #fff
+                border-radius: 10px
+                display: flex
+                height: 8vh
+                justify-content: center            
+                margin: 2.5rem 0 5rem 0
+                width: 100%
+                h2
+                    color: $azul-principal
+                    font-family: $tipografia-titulos
+                    font-size: 2.2rem
+                    font-weight: 700
+            .dValores
+                padding: 0 4rem
+                display: flex
+                flex-direction: column
+                justify-content: center
+                order: 2
+                .dTitulos
+                    color: $gris
+                    font-family: $tipografia-texto
+                    font-size: 2.2rem
+                    font-weight: 700
+                p
+                    color: $gris-claro
+                    font-family: $tipografia-texto
+                    font-size: 1.8rem
+                p:nth-child(2), p:nth-child(4)
+                    padding-bottom: 2rem
+            .dImagenes
+                background-color: #fff
+                border: 15px solid $rojo-complementario
+                border-radius: 25px
+                order: 1
+        #sct-EqReparan
+            margin-top: 8rem
+            text-align: center
+            h2
+                color: $azul-principal
+                font-family: $tipografia-titulos
+                font-size: 2.2rem
+                font-weight: 700
+                padding-bottom: 3rem
+            @media all and ( max-width: 767px )
+                h2
+                    padding: 0 2rem 2rem 2rem                
+            .dCarouselEqReparan
+                border: 5px solid $azul-secundario
+                border-radius: 15px
+                padding: 3rem 0                
+            button
+                .carousel-control-prev-icon
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff534b' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+                .carousel-control-next-icon
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff534b' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+    footer
+        background-color: $azul-secundario
+        height: 22vh
+        margin-top: 8rem
+        padding: 0 !important        
+        .dFilaFooter
+            padding-right: 0 !important
+            width: 100%
+            .dFooterIzq
+                p
+                    padding: 15px 1rem
+                    text-align: center
+                    a
+                        color: $gris-claro
+                        font-size: 1.6rem
+                        text-decoration: none
+            .dFooterDer
+                display: flex
+                flex-direction: column
+                align-items: center
+                p
+                    color: $gris-claro
+                    font-size: 1.6rem
+                    padding-top: 15px
+                @media all and (max-width: 720px)
+                    p
+                        text-align: center
+                .iconos
+                    display: flex
+                    a
+                        color: $gris-claro
+                        font-size: 1.8rem
+                        padding-right: 2rem
+                    .aI:hover
+                        color: $rojo-complementario
+                    .aIWh:hover
+                        color: $verde-wh
+        .dFilaFooter2
+            color: $gris-claro
+            font-family: $tipografia-texto
+            font-size: 1.6rem
+            padding-top: 1rem
+            text-align: center
+            span
+                font-size: 1.25rem                
+            #icono-final
+                font-size: 2.5rem
+                text-align: right
+                position: absolute
+                right: 0px
+                a
+                    i
+                        color: $gris-claro
+    @media all and ( max-width: 767px )
+        footer
+            background-color: $azul-secundario
+            height: 33vh
+            margin-top: 8rem
+            padding: 0 !important
+            .dFilaFooter2
+                div
+                    p
+                        padding: 0 7%
+
+    
